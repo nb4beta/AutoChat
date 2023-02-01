@@ -19,6 +19,11 @@ pip install undetected-chromedriver
 pip install selenium
 ```
 
+or alternatively use the requirements.txt to install all dependencies at once
+
+```
+pip install -r requirements.txt
+```
 
 
 
