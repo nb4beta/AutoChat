@@ -27,9 +27,6 @@ pip install -r requirements.txt
 
 
 
-# sdfgsfgsfgsfsfsfsfgsdfgsdfgsdfgsdfgsdfs
-
-
 
 ## Relevant Links:
 
