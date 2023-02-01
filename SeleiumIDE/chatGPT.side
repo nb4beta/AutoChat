@@ -1,0 +1,68 @@
+{
+  "id": "0331233d-9955-476f-893e-b99204dcbe55",
+  "version": "2.0",
+  "name": "chatGPT",
+  "url": "https://chat.openai.com",
+  "tests": [{
+    "id": "32a2ec6a-f852-4586-b68e-f7a5a7d685b2",
+    "name": "1",
+    "commands": [{
+      "id": "e54e8364-7b4d-44e5-82d1-285cac90ab7c",
+      "comment": "",
+      "command": "open",
+      "target": "/chat",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "289158b0-1917-44ef-b237-20935c5198a6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee6f3739-753c-4602-a2ec-bd43bfb78b95",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//textarea",
+      "targets": [
+        ["css=.m-0", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div/main/div[2]/form/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1923c55b-75f1-44e2-8a70-30c92c3e2fe6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//textarea",
+      "targets": [
+        ["css=.m-0", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div/main/div[2]/form/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Hello World"
+    }, {
+      "id": "295cb540-e3e3-47ce-8111-8a50f4a4d47d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.m-0",
+      "targets": [
+        ["css=.m-0", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div/main/div[2]/form/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "822ff3c9-97cd-4efa-803a-50db41dc5194",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["32a2ec6a-f852-4586-b68e-f7a5a7d685b2"]
+  }],
+  "urls": ["https://chat.openai.com/"],
+  "plugins": []
+}
